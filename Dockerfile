@@ -68,9 +68,6 @@ COPY ./fonts/ /usr/share/fonts/TTF/
 # Copy novnc files
 COPY ./novnc/ /usr/libexec/noVNCdim/
 
-# Copy static
-RUN mkdir /home/web
-
 # Entry point
 ENTRYPOINT ["/bin/bash","/etc/entrypoint.sh"]
 
