@@ -68,8 +68,5 @@ COPY ./fonts/ /usr/share/fonts/TTF/
 # Copy novnc files
 COPY ./novnc/ /usr/libexec/noVNCdim/
 
-# Entry point
-ENTRYPOINT ["/bin/bash","/etc/entrypoint.sh"]
-
 # Expose Port
 EXPOSE 8000 8080
